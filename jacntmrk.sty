@@ -272,6 +272,14 @@
 		-- (0,-0.1em);
 \end{tikzpicture}}%
 }{}%
+\ifthenelse{\equal{#1}{black}}{\unknowncharacterfalse%
+\parbox[c]{0.9em}{%
+\begin{tikzpicture}[line cap=rect, sharp corners, line width=0.08em]
+    \path[fill, color=black] (-0.37em,0.5em) (0.37em,-0.7em);
+    \draw [fill, color=black](0,0)
+		ellipse (0.37em and 0.5em);
+\end{tikzpicture}}%
+}{}%
 \ifunknowncharacter{%
 \parbox[c]{0.9em}{%
 \begin{tikzpicture}[line cap=rect, sharp corners, line width=0.08em]
